@@ -1,0 +1,80 @@
+body {
+    background-color: greenyellow;
+}
+@keyframes animateHeaders{
+    0% {color:greenyellow}
+    50% {transform: rotate(180deg);}    
+}
+@keyframes allHail{
+    from{background-color: red;}
+    to{background-color: honeydew; font-weight: bold;}
+}
+h1 {
+    color: blue;
+    animation-name: animateHeaders;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;    
+}
+h2{
+    color: cadetblue;
+    animation-name: animateHeaders;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+h3{
+    color: fuchsia;
+    animation-name: animateHeaders;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#HeaderDiv{
+    left:auto;
+    right:auto;
+    text-align: center;
+}
+#PictureFrame{
+    border: 20px inset blue;
+}
+#StatementOfTrust{
+    border:20px outset blue;
+    margin:10px;
+    padding-left: 25%;
+    padding-right: 25%;
+    left:25%;
+    right:25%;
+    display:inline-block;
+}
+#BuyNow {
+    left:auto;
+    right: auto;
+    text-align: center;    
+    width:100px;
+    height:auto;
+    animation-name: allHail;
+    animation-duration: 1;
+    animation-iteration-count: infinite;
+    }
+#BuyNowInnerDiv{
+    animation-name: allHail;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;    
+}
+
+#BuyNowInnerP{
+    animation-name: allHail;    
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#BuyNow a{
+    text-decoration: none;
+}
+.roundCorners{
+    border-radius: 20px;
+    padding:5px
+}
+#PictureFrame img{
+    height:300px;
+    width:auto;
+}
